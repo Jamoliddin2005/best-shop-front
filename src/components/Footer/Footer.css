@@ -1,0 +1,230 @@
+.Footer {
+  width: 100%;
+  background: var(--color-dark);
+  padding: 50px 0;
+}
+
+.Footer .Footer_Top .container .row {
+  padding-bottom: 20px;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.Footer .Footer_Top .container ul {
+  width: 400px;
+}
+
+.Footer .Footer_Top .container ul h3 {
+  border-bottom: 1px solid var(--color-grey);
+  padding-bottom: 15px;
+  font-weight: 300;
+  font-family: var(--font-family-roboto);
+  font-size: 30px;
+  color: var(--color-white);
+}
+
+.Footer .Footer_Top .container .Home_Logo {
+  font-family: 'Bitter', serif;
+  color: var(--color-snow);
+  font-size: 30px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+.Footer .Footer_Top .container ul li {
+  padding-top: 10px;
+}
+
+.Footer .Footer_Top .container ul li a {
+  color: #dcdde1;
+  font-family: var(--font-family-roboto);
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.Footer .Footer_Top .container ul li a:hover {
+  color: var(--color-green-footer);
+}
+
+.footer_bottom {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer_bottom ul {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family-roboto);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.footer_bottom ul li {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--color-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding-top: 0 !important;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.footer_bottom ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer_bottom ul li:hover {
+  border-color: var(--color-green-footer);
+}
+
+.footer_bottom ul li:hover a {
+  color: var(--color-green-footer) !important;
+}
+
+.footer_bottom form {
+  display: flex;
+  align-items: center;
+}
+
+form input {
+  padding: 10px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-color: var(--color-grey);
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #adadad;
+  background-color: var(--color-dark);
+  color: #e4e4e4;
+  background-clip: padding-box;
+}
+
+form button {
+  background-color: var(--color-violet) !important;
+  border-color: var(--color-violet) !important;
+  color: var(--color-snow) !important;
+  padding: 8px 20px;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.footer_center {
+  position: relative;
+  height: 200px;
+}
+
+.footer_center .loadingio-spinner-spin-j0h89mbuyk {
+  left: 20%;
+  top: 70%;
+}
+
+@media(max-width:1250px) {
+  .Footer .Footer_Top .container ul {
+    width: auto;
+  }
+
+  .Footer .Footer_Top .container ul:last-child {
+    width: 250px;
+  }
+
+  .Footer .Footer_Top .container .row {
+    justify-content: space-between;
+  }
+}
+
+
+@media(max-width:850px) {
+  .Footer {
+    padding: 30px 0;
+  }
+
+  .Footer .Footer_Top .container ul h3 {
+    font-size: 23px;
+  }
+
+  .Footer .Footer_Top .container ul li a {
+    font-size: 15px;
+  }
+
+  .Footer .Footer_Top .container ul:last-child {
+    width: 200px;
+  }
+}
+
+@media(max-width:630px) {
+  .footer_bottom ul li {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media(max-width:600px) {
+  .Footer .Footer_Top .container ul:last-child {
+    display: none;
+  }
+
+  .Footer .Footer_Top .container .footer_center {
+    width: 40%;
+  }
+
+  .Footer .Footer_Top .container .footer_bottom ul {
+    margin-bottom: 20px;
+  }
+
+  .footer_bottom {
+    justify-content: center;
+  }
+}
+
+@media(max-width:480px) {
+  .Footer {
+    overflow: hidden;
+  }
+
+  .loading_Div_footer {
+    min-height: 200px;
+  }
+
+  .footer_center .loadingio-spinner-spin-j0h89mbuyk {
+    left: 70%;
+    top: 70%;
+  }
+}
+
+@media(max-width:370px) {
+  .Footer .Footer_Top .container .row {
+    flex-direction: column;
+  }
+
+  .Footer .Footer_Top .container .footer_center {
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .Footer .Footer_Top .container .Home_Logo {
+    margin-bottom: 0;
+  }
+}

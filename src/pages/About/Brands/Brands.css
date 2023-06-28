@@ -1,0 +1,41 @@
+.image {
+  width: 70%;
+}
+
+.Brands {
+  background-color: var(--color-blue);
+  padding: 130px 0 120px;
+}
+
+.Brands .text {
+  width: 635px;
+  margin: auto;
+  text-align: center;
+}
+
+.Brands .text h2 {
+  font-family: var(--font-family-roboto);
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  color: #212529;
+  line-height: 1.2;
+}
+
+.Brands .text p {
+  font-family: var(--font-family-roboto);
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.Brands .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+
+.Brands .swiper {
+  height: 230px;
+}

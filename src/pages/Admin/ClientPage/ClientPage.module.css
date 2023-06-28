@@ -1,0 +1,34 @@
+.adminPageRow {
+  display: flex;
+  margin-top: 100px;
+  position: relative;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.inputUpload {
+  display: none;
+}
+
+.adminPagePanel {
+  top: 0;
+  right: 0;
+  width: 400px;
+  position: absolute;
+}
+
+.adminPagePanel .itemPanele {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.logout {
+  color: red;
+  cursor: pointer;
+}

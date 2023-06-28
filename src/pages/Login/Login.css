@@ -1,0 +1,307 @@
+.login {
+  height: calc(90vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.login .wrapper {
+  width: 900px;
+  height: 500px;
+  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.login .left,
+.login .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login .center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.login .or {
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  padding: 10px;
+  color: gray;
+  background-color: white;
+  font-weight: bold;
+}
+
+.login .line {
+  width: 0.5px;
+  height: 70%;
+  background-color: lightgray;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.login .loginButton {
+  width: 250px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.login .google {
+  background-color: #df4930;
+}
+
+.login .facebook {
+  background-color: #507cc0;
+}
+
+.login .github {
+  background-color: black;
+}
+
+.login .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.login input {
+  width: 300px;
+  padding: 15px 20px;
+  margin-bottom: 0;
+  outline: none;
+}
+
+.login input.notactive {
+  border: 2px solid red;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.login input.active {
+  border: 2px solid #11c73f;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+} 
+
+.login .submit {
+  width: 300px;
+  background-color: rgba(128, 0, 128, 0.671);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.login .submit.NotactiveBTN {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.login .loginTitle {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: lightgray;
+}
+
+.login .link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.createAccount {
+  color: var(--color-dark);
+  font-family: var(--font-family-roboto);
+  font-size: 15px;
+  font-weight: 300;
+  transition: 0.3s;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+
+.inputsDive {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.PhoneInput {
+  width: 60px;
+  height: 60px;
+}
+
+.PhoneInput {
+  width: 300px;
+}
+
+.PhoneInputCountry {
+  width: 60px;
+  height: 60px;
+}
+
+.PhoneInputCountryIcon--border {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  box-shadow: none !important;
+  border: none;
+}
+
+#sign-in-button {
+  width: 300px;
+}
+
+.inputsLoginPass {
+  position: relative;
+}
+
+.inputsLoginPass .switcher {
+  position: absolute;
+  right: 0;
+  top: 0;   white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+}
+
+.inputsLoginPass .switcher .off,
+.inputsLoginPass .switcher .on {
+  padding: 13px;
+  cursor: pointer;   white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+}
+
+.codeSubmit {
+  margin-bottom: 20px !important;
+}
+
+.min6 {
+  border: 2px solid red;
+}
+
+.accountPass {
+  margin-bottom: 20px !important;
+}
+
+@media(max-width:920px) {
+  .login .wrapper {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .login .left,
+  .login .right {
+    flex: auto;
+  }
+
+  .loginTitle {
+    display: none;
+  }
+}
+
+@media(max-width:700px) {
+  .login .wrapper {
+    width: 90%;
+    height: auto;
+    box-shadow: none;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .login .center {
+    display: none;
+  }
+
+  .login {
+    height: 70vh;
+  }
+
+  .login .left,
+  .login .right {
+    width: 100%;
+    flex: inherit;
+  }
+
+  .login .right {
+    margin-bottom: 50px;
+  }
+
+  .PhoneInput,
+  .login .submit,
+  .login input,
+  .inputsLoginPass {
+    width: 100%;
+  }
+
+  .accountPass,
+  .codeSubmit {
+    margin-bottom: 0 !important;
+  }
+
+  .inputsLoginPass {
+    margin-top: 10px;
+  }
+
+  .login .left {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .login .loginButton {
+    width: 48%;
+  }
+}
+
+@media(max-width:550px) {
+  .login {
+    height: 50vh;
+  }
+}
+
+@media(max-width:480px) {
+  .login {
+    height: 40vh;
+  }
+
+  .login .right {
+    margin-bottom: 30px;
+  }
+}

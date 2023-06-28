@@ -1,0 +1,190 @@
+.Categories {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  padding-top: 50px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.product {
+  width: 320px;
+  cursor: pointer;
+  height: 377px;
+  background-color: white;
+  border: 1px solid var(--color-violet);
+  border-radius: 5px;
+}
+
+.image {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+  border: 1px solid var(--color-blue);
+  border-radius: 5px;
+  height: 270px;
+}
+
+.img {
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.texts {
+  padding: 20px;
+}
+
+.price_name {
+  margin-bottom: 15px;
+}
+
+.name {
+  font-family: var(--font-family-roboto);
+  font-size: 17px;
+  font-weight: 300;
+  color: #212529;
+  margin-bottom: 13px;
+}
+
+.price {
+  color: var(--color-violet);
+  font-family: var(--font-family-roboto);
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+
+@media(max-width:1450px) {
+  .product {
+    width: 23.4%;
+  }
+}
+
+@media(max-width:1233px) {
+  .product {
+    width: 24.2%;
+    height: auto;
+  }
+
+  .name {
+    height: 40px;
+  }
+
+  .price_name,
+  .price {
+    margin-bottom: 0;
+  }
+
+  .row {
+    gap: 10px;
+  }
+}
+
+@media(max-width:1100px) {
+  .image {
+    height: 240px;
+    padding: 10px;
+  }
+
+  .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .texts {
+    padding: 10px;
+  }
+}
+
+@media(max-width:970px) {
+  .product {
+    width: 32.4%;
+  }
+
+  .name {
+    margin-bottom: 0;
+  }
+}
+
+@media(max-width:750px) {
+  .product {
+    width: 49%;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .name {
+    margin-bottom: 0;
+  }
+
+  .image {
+    height: 300px;
+  }
+}
+
+@media(max-width:700px) {
+  .Categories {
+    padding-top: 10px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+}
+
+@media(max-width:500px) {
+  .Categories {
+    padding-top: 5px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .image {
+    height: 230px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+}
+
+@media(max-width:370px) {
+  .Categories {
+    padding-top: 5px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .product {
+    margin-bottom: 10px;
+  }
+
+  .image {
+    height: 200px;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+}

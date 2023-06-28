@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+.Truth {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: var(--color-snow);
+  z-index: 7;
+  width: 450px;
+}
+
+.Truth .AboutProduct span {
+  font-size: 17px;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.Truth .AboutProduct h3,
+.Truth .AboutProduct h4,
+.Truth .AboutProduct p {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.Truth .buttons {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.Truth .buttons span {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(66, 201, 8);
+  margin-bottom: 10px;
+}
+
+.Truth .buttons button {
+  width: 100px;
+  cursor: pointer;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 3px;
+  background-color: var(--color-dark);
+  color: white;
+  padding: 4px 0 5px;
+  transition: 0.3s;
+}
+
+.Truth .buttons button.yes {
+  margin-right: 10px;
+  background-color: var(--color-violet);
+}
+
+.Truth .buttons button.yes:hover {
+  background-color: rgb(132, 255, 79);
+}
+
+.Truth .buttons button:hover {
+  color: black;
+  background-color: rgb(255, 98, 58);
+}
+
+.Truth .buttons button:active {
+  transform: scale(1.1);
+}
+
+.Truth label {
+  font-size: 17px;
+  font-family: "Lora", serif;
+
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.Truth input {
+  background: transparent;
+  width: 100%;
+  border-radius: 5px;
+  padding: 7px;
+  display: block;
+  color: var(--color-dark);
+  outline: none;
+  border: 1px solid black;
+}
+
+.Truth .SubmitCode {
+  width: 100px;
+  cursor: pointer;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 3px;
+  background-color: rgb(61, 61, 61);
+  color: white;
+  transition: 0.3s;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signInOTP {
+  display: none;
+}
+
+.Truth .SubmitCode img {
+  width: 25px;
+  height: auto;
+}
+
+
+
+
+@media(max-width:450px) {
+  .Truth {
+    width: 100%;
+    padding: 20px;
+  }
+}

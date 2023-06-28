@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box; 
+}
+
+.container {
+  width: 1400px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+:root {
+  --color-violet: #862ac1;
+  --color-dark: #212934;
+  --color-white: #cfd6e1;
+  --color-blue: #e9eef5;
+  --color-snow: #fff;
+  --color-green-footer: #68bb7d;
+  --color-grey: #2d343f;
+  --color-green-border: #56ae6c;
+  --font-family-roboto: "Roboto", sans-serif;
+}
+
+.mongo_big {
+  padding-top: 120px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-violet);
+  border-radius: 10px;
+}
+
+
+/* Media */
+
+@media(max-width:1450px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media(max-width:1250px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media(max-width:1230px) {
+  .mongo_big {
+    padding-top: 100px;
+  }
+}
+
+@media(max-width:1100px) {
+  .container {
+    width: 950px;
+  }
+}
+
+@media(max-width:970px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media(max-width:800px) {
+  .react-transform-wrapper {
+    width: auto !important;
+  }
+
+  .react-transform-component {
+    width: 100% !important;
+    height: 500px !important;
+  }
+}
+
+@media(max-width:850px) {
+  .mongo_big {
+    padding-top: 100px;
+  }
+}
+
+@media(max-width:700px) {
+  .mongo_big {
+    padding-top: 140px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    display: none;
+  }
+}
+
+@media(max-width:480px) {
+  .mongo_big {
+    padding-top: 180px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,33 @@
+.Categories {
+    margin-top: 100px;
+}
+
+.title {
+    text-align: left !important;
+    font-size: 30px;
+    color: var( --color-dark) ;
+    font-family: var(--font-family-roboto);
+    font-weight: 200;
+    transition: 0.3s;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.addCategory {
+    width: 30%;
+}
+
+
+
+.categories {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 65%;
+    position: relative;
+    gap: 30px;
+}

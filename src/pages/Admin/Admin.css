@@ -1,0 +1,75 @@
+.adminPage {
+  width: 90%;
+  height: auto;
+  background-color: #eee;
+  margin: auto;
+  padding: 50px 25px;
+  padding-right: 0;
+}
+
+.adminPage .CarouselHomeHeaderBigDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adminPage .CarouselHomeHeaderBigDiv .carouselHome {
+  width: 60%;
+}
+
+.adminPage .CarouselHomeHeaderBigDiv .headerCarousel {
+  width: 30%;
+}
+
+.adminPage .adminTitle h1 {
+  text-align: center;
+  font-size: 40px;
+  color: var( --color-dark) ;
+  font-family: var(--font-family-roboto);
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.adminPage .adminTitle form {
+  width: 100%;
+}
+
+.adminPage .adminTitle .headerCarousel h3 {
+  font-size: 30px;
+  color: var( --color-dark) ;
+  font-family: var(--font-family-roboto);
+  font-weight: 200;
+  transition: 0.3s;
+}
+
+.adminPage .adminTitle .headerCarousel form label {
+  color: var( --color-dark) ;
+  display: block;
+  margin: 5px 0;
+}
+
+.adminPage .adminTitle .headerCarousel form input,
+.adminPage .adminTitle .headerCarousel form .selectInp {
+  background: transparent;
+  width: 100%;
+  border-radius: 5px;
+  padding: 7px;
+  display: block;
+  color: var( --color-dark) ;
+  outline: none;
+}
+
+.adminPage .adminTitle .headerCarousel form button {
+  margin-top: 20px;
+  color: white !important;
+}
+
+.adminPage .adminTitle .headerCarousel form select {
+  background: transparent;
+  width: 100%;
+  border-radius: 5px;
+  padding: 7px;
+  display: block;
+  color: var( --color-dark) ;
+  outline: none;
+}

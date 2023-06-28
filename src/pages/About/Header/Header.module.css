@@ -1,0 +1,33 @@
+.Header {
+  background-color: var(--color-violet) ;
+  height: 550px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.Left,
+.Right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-snow);
+  font-family: var(--font-family-roboto);
+}
+
+.Left h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.Left p {
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 300;
+}

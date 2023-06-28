@@ -1,0 +1,72 @@
+.section {
+  padding: 80px 0 100px;
+}
+
+.services {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.services h2 {
+  font-family: var(--font-family-roboto);
+  font-size: 48px;
+  font-weight: 200;
+  color: #212529;
+  margin-bottom: 7px;
+}
+
+.services p {
+  font-family: var(--font-family-roboto);
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.carts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carts .cart {
+  width: 23%;
+  transition: 0.3s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 3.5rem 0;
+}
+
+.carts .cart:hover {
+  background: #69bb7e;
+  color: var(--color-snow);
+}
+
+.carts .cart i {
+  font-size: 3.33333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+  color: var(--color-violet);
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.carts .cart:hover i,
+.carts .cart:hover h3 {
+  color: var(--color-snow);
+}
+
+.carts .cart h3 {
+  font-family: var(--font-family-roboto);
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #212529;
+  transition: 0.3s;
+}

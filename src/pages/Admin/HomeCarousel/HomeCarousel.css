@@ -1,0 +1,159 @@
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .carouselHome .image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .carouselHome h1 {
+  font-size: 30px;
+  text-align: left;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .carouselHome h3 {
+  font-size: 23px;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .carouselHome p {
+  font-family: var(--font-family-roboto);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .swiper-button-prev,
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .swiper-button-next {
+  width: 50px;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .swiper-button-prev::after,
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .swiper-button-next::after {
+  font-size: 23px;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .carouselHome p {
+  font-size: 16px;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .carouselHome .row {
+  justify-content: space-around;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .carouselHome .container {
+  width: 80%;
+  margin: auto;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .carouselHome .carousel .swiper {
+  height: auto;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .swiper-horizontal>.adminPage .adminTitle .CarouselHomeHeaderBigDiv .swiper-pagination-bullets,
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .swiper-pagination-bullets.swiper-pagination-horizontal,
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .swiper-pagination-custom,
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .swiper-pagination-fraction {
+  bottom: 10px;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .carouselHome .carousel .swiper .buttons {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 45px !important;
+  height: 45px !important;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .carouselHome .carousel .swiper .buttons button {
+  border: none;
+  margin-right: 10px;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+.adminPage .adminTitle .CarouselHomeHeaderBigDiv .carouselHome .carousel .swiper .buttons button:hover {
+  border: 1px solid var(--color-dark);
+  color: var(--color-dark);
+}
+
+.updateForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-snow);
+  border-radius: 5px;
+  padding: 50px 30px;
+  width: 70%;
+  z-index: 5;
+  height: auto;
+}
+
+.bigUpdateDiv .bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 4;
+}
+
+.adminPage .container .row {
+  height: auto;
+}
+
+.css-1s2u09g-control {
+  background: transparent !important;
+  border-color: var(--color-grey) !important;
+}
+
+.selectReact {
+  box-shadow: none !important;
+  border-color: var(--color-grey) !important;
+}
+
+.css-1pahdxg-control {
+  border-color: var(--color-grey) !important;
+  box-shadow: none !important;
+}
+
+.css-1pahdxg-control:hover {
+  border-color: var(--color-grey) !important;
+  box-shadow: none !important;
+}
+
+.delete_btn {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  z-index: 5;
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: var(--color-violet) !important;
+  border-color: var(--color-green-border) !important;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+
+
+@media(max-width:700px) {
+  .swiper_loading {
+    min-height: 200px;
+  }
+
+  .loadingio-spinner-spin-j0h89mbuyk {
+    left: 60%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-wrapper {
+    margin-bottom: 10px;
+  }
+}
