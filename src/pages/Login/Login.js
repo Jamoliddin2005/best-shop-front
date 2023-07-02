@@ -106,6 +106,7 @@ const Login = ({ GetToken }) => {
         const phoneNumber = value;
         configureCaptcha();
         const appVerifier = window.recaptchaVerifier;
+      
 
         firebase
           .auth()
@@ -119,6 +120,8 @@ const Login = ({ GetToken }) => {
             return SetTrueFalse(false);
           });
       } else {
+        SetTrueFalse(true);
+        setLoadingButton(false);
         return setAccountPassword(true);
       }
     } else {
