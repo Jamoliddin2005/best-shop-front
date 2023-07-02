@@ -3,6 +3,7 @@ import Google from "../img/google.png";
 import Github from "../img/github.png";
 import { toast } from "react-toastify";
 import "react-phone-number-input/style.css";
+import translate from "../../components/translate/translate";
 import PhoneInput from "react-phone-number-input";
 import firebase from "../../firebase";
 import "./Login.css";
@@ -48,15 +49,16 @@ const Login = ({ GetToken }) => {
           })
           .catch((error) => {
             setLoadingButton(false);
-            return toast.error("Kod xato!!!");
+            return toast.error(translate("Ошибка!", "Xatolik!"));
           });
       } else {
         setLoadingButton(false);
-        return toast.error("Kodni to'gri kiriting");
+        return toast.error(translate("не правилно!", "noto'g'ri!"));
+
       }
     } else {
       setLoadingButton(false);
-      return toast.error("Kodni to'gri kiriting");
+      return toast.error(translate("не правилно!", "noto'g'ri!"));
     }
   };
   const SubmitCode = async (req, res) => {
@@ -78,12 +80,12 @@ const Login = ({ GetToken }) => {
           return;
         }
 
-        return toast.success("Success");
+        return toast.success(translate("Успешно!", "Muvaffaqiyatli!"));
       } else {
-        return toast.error("Parol juda qisqa");
+        return toast.error(translate("Пароль слишком короткий", "Parol juda qisqa"));
       }
     } else {
-      return toast.error("Parol juda qisqa");
+      return toast.error(translate("Пароль слишком короткий", "Parol juda qisqa"));
     }
   };
   const google = () => {
@@ -106,7 +108,7 @@ const Login = ({ GetToken }) => {
         const phoneNumber = value;
         configureCaptcha();
         const appVerifier = window.recaptchaVerifier;
-      
+
 
         firebase
           .auth()
@@ -125,7 +127,7 @@ const Login = ({ GetToken }) => {
         return setAccountPassword(true);
       }
     } else {
-      return toast.error("Nomerni tog'ri kiriting");
+      return toast.error(translate("неправильный номер!", "Nomer noto'g'ri!"));
     }
   };
 
@@ -144,14 +146,14 @@ const Login = ({ GetToken }) => {
       GetToken();
       return;
     } else {
-      return toast.error("Password is Incorrect");
+      return toast.error(translate("неправильный номер!", "Nomer noto'g'ri!"));
     }
   };
 
   return (
     <div className="login">
       <div className="wrapper">
-        <h1 className="loginTitle">Login Page</h1>
+        <h1 className="loginTitle">{translate("Вход", "Kirish")}</h1>
         <div className="left">
           <div className="loginButton google" onClick={google}>
             <img src={Google} alt="" className="icon" />
@@ -171,7 +173,7 @@ const Login = ({ GetToken }) => {
             international
             defaultCountry="UZ"
             className="input"
-            placeholder="Enter phone number"
+            placeholder={translate("номер телефона", "Telefon raqamingiz")}
             value={value}
             onChange={setValue}
           />
@@ -180,7 +182,7 @@ const Login = ({ GetToken }) => {
               <div className="inputsLoginPass">
                 <input
                   className={"input accountPass"}
-                  placeholder="Password"
+                  placeholder={translate("Ваш пароль", "Parolingiz")}
                   value={passwordNumber}
                   minLength={6}
                   type={switcher ? "text" : "password"}
@@ -213,7 +215,7 @@ const Login = ({ GetToken }) => {
                 </div>
               </div>
               {LoadingButton ? (
-                <button className="submit" disabled={true}>Loading...</button>
+                <button className="submit" disabled={true}>{translate("загрузка...", "yuklanmoqda...")}</button>
               ) : (
                 <button
                   className="submit"
@@ -232,7 +234,7 @@ const Login = ({ GetToken }) => {
                       <div className="inputsLoginPass">
                         <input
                           className={"input"}
-                          placeholder="Create Password"
+                          placeholder={translate("Создать пароль", "Parol yarating")}
                           value={password}
                           minLength={6}
                           type={switcher ? "text" : "password"}
@@ -267,24 +269,24 @@ const Login = ({ GetToken }) => {
                     </>
                   ) : (
                     LoadingButton ? (
-                      <button className="submit" disabled={true}>Loading...</button>
+                      <button className="submit" disabled={true}>{translate("загрузка...", "yuklanmoqda...")}</button>
                     ) : (
                       <>
-                      <input
-                        className="input codeSubmit"
-                        placeholder="Code"
-                        value={code}
-                        onChange={(e) => setCode(e.target.value)}
-                      /> 
-                      <button className="submit" onClick={onSubmitOTP}>
-                        Login
-                      </button>
-                    </>
-                    )                  
+                        <input
+                          className="input codeSubmit"
+                          placeholder={translate("Введите код", "Kodni kiriting")}
+                          value={code}
+                          onChange={(e) => setCode(e.target.value)}
+                        />
+                        <button className="submit" onClick={onSubmitOTP}>
+                          {translate("Отправить", "Yuborish")}
+                        </button>
+                      </>
+                    )
                   )}
                 </>
               ) : LoadingButton ? (
-                <button className="submit" disabled={true}>Loading...</button>
+                <button className="submit" disabled={true}>{translate("загрузка...", "yuklanmoqda...")}</button>
               ) : (
                 <button className="submit" onClick={SubmitHandler}>
                   Login
