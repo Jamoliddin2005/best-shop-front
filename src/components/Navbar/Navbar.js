@@ -115,7 +115,7 @@ function Navbar({ user, uzLanguage, setUzLanguage, productNumbers,
         <div className="container">
           <div className="row">
             <Link to="/" className="navbar_left" onClick={() => onScrollTop()}>
-              <span>Mongo.uz</span>
+              <span>BestShop.uz</span>
             </Link>
             <ul
               className={`${user ? "navbar_center navbar_user_center" : "navbar_center"
