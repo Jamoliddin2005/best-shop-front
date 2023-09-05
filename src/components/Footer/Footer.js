@@ -59,7 +59,7 @@ export default function Footer({ categories, Abouts, loading }) {
           <div className="row">
             <ul>
               <Link to="/" className="Home_Logo">
-                <span>Mongo.uz</span>
+                <span>BestShop.uz</span>
               </Link>
               {Abouts.map((item, index) => (
                 item.icon &&
